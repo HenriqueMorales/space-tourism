@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   font-size: 2rem;
   height: 150px;
   margin: 0 auto;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   position: relative;
   width: 150px;
 

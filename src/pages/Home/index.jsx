@@ -1,3 +1,4 @@
+import Container from "@/Components/Container";
 import ExploreButton from "@/Components/ExploreButton";
 import Header from "@/Components/Header";
 import TextWrapper from "@/Components/TextWrapper";
@@ -7,8 +8,10 @@ const Home = () => {
   return (
     <>
       <Header />
-      <TextWrapper />
-      <ExploreButton />
+      <Container>
+        <TextWrapper />
+        <ExploreButton />
+      </Container>
     </>
   );
 };

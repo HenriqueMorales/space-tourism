@@ -5,6 +5,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+
+  .menu {
+    cursor: pointer;
+  }
 `;
 
 export default StyledHeader;
