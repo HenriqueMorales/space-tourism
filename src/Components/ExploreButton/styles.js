@@ -9,11 +9,22 @@ const StyledButton = styled.button`
   display: block;
   font-family: Bellefair, sans-serif;
   font-size: 2rem;
-  height: 150px;
+  height: 15rem;
   margin: 0 auto;
-  /* margin-top: 80px; */
   position: relative;
-  width: 150px;
+  width: 15rem;
+
+  @media (min-width: 700px) {
+    font-size: 3.2rem;
+    height: 24.2rem;
+    width: 24.2rem;
+  }
+
+  @media (min-width: 1400px) {
+    height: 27.4rem;
+    margin: 0%;
+    width: 27.4rem;
+  }
 
   &::before {
     background: #2e3038;
@@ -22,15 +33,26 @@ const StyledButton = styled.button`
     height: 150px;
     left: 0;
     position: absolute;
+    opacity: 0.8;
     transition: transform 0.3s;
     top: 0;
     width: 150px;
     z-index: -1;
+
+    @media (min-width: 700px) {
+      height: 24.2rem;
+      width: 24.2rem;
+    }
+
+    @media (min-width: 1400px) {
+      height: 27.4rem;
+      width: 27.4rem;
+    }
   }
 
   &:hover {
     &:before {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
 `;

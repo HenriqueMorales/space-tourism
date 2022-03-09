@@ -6,6 +6,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         list-style: none;
+        text-decoration: none;
     }
 
     html {
@@ -17,16 +18,16 @@ export default createGlobalStyle`
         background: url("src/assets/home/background-home-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-            background-position: center;
+        background-position: bottom;
 
-        @media (min-width: 481px) {
+        @media (min-width: 550px) {
             background: url("src/assets/home/background-home-tablet.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
         }
 
-        @media (min-width: 1025px) {
+        @media (min-width: 1400px) {
             background: url("src/assets/home/background-home-desktop.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -36,7 +37,7 @@ export default createGlobalStyle`
 
      #root {
         height: 100%;
-        width: 100%;
+        
      }
     
 `;
