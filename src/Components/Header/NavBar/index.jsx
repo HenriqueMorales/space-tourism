@@ -1,9 +1,11 @@
 import React from "react";
 import StyledNavBar from "./styles";
+import closeMenuIcon from "@/assets/shared/icon-close.svg";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
-    <StyledNavBar>
+    <StyledNavBar showMenu={props.showMenu}>
+      <img src={closeMenuIcon} onClick={props.handleClick} />
       <ul>
         <li>
           <a href="#">

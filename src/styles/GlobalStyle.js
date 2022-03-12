@@ -14,11 +14,12 @@ export default createGlobalStyle`
     }
 
     body {
-        height: 100vh;
         background: url("src/assets/home/background-home-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+        height: 100vh;
+        overflow: hidden;
 
         @media (min-width: 550px) {
             background: url("src/assets/home/background-home-tablet.jpg");
