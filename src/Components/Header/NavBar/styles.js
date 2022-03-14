@@ -72,6 +72,8 @@ const StyledNavBar = styled.nav`
         display: flex;
         gap: 1.6rem;
         padding: 4px 0;
+        height: 100%;
+        align-items: center;
 
         &:hover {
           border-right: 4px solid hsla(0, 0%, 50%, 1);

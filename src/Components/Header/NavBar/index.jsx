@@ -1,6 +1,7 @@
 import React from "react";
 import StyledNavBar from "./styles";
 import closeMenuIcon from "@/assets/shared/icon-close.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
@@ -8,24 +9,24 @@ const Navbar = (props) => {
       <img src={closeMenuIcon} onClick={props.handleClick} />
       <ul>
         <li>
-          <a href="#">
+          <Link to="/">
             <span>00</span> <p>HOME</p>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/destination">
             <span>01</span> <p>DESTINATION</p>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/crew">
             <span>02</span> <p>CREW</p>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/technology">
             <span>03</span> <p>TECHNOLOGY</p>
-          </a>
+          </Link>
         </li>
       </ul>
     </StyledNavBar>
